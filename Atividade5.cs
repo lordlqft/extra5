@@ -7,8 +7,7 @@ Sugestão:
 na última linha do código chame a função Menu();
 */
 
-/*
-static void Opção(string opcao, double numero1, double numero2)
+static void Opcao(string opcao, double numero1, double numero2)
 {
     double resultado = 0;
     if (opcao == "+")
@@ -57,7 +56,7 @@ static void Menu()
         Console.Write("Digite o segundo número: ");
         double numero2 = double.Parse(Console.ReadLine()!);
 
-        Opção(opcao, numero1, numero2);
+        Opcao(opcao, numero1, numero2);
 
         Console.WriteLine();
         Console.Write("Deseja fazer outro cálculo? (s/n): ");
@@ -72,4 +71,3 @@ static void ExecutarSistema()
 }
 
 ExecutarSistema();
-*/
