@@ -7,6 +7,7 @@ Sugestão:
 na última linha do código chame a função Menu();
 */
 
+/*
 static void OpcaoCalculo(string opcao, double numero1, double numero2)
 {
     double resultado = 0;
@@ -71,3 +72,4 @@ static void ExecutarSistema()
 }
 
 ExecutarSistema();
+*/
