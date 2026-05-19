@@ -38,19 +38,16 @@ static string LerContinuacao()
     return continuar;
 }
 
-static void ExecutarSistema()
+static bool DesejaContinuar(string resposta)
 {
-    while (true)
+    if (resposta == "s" || resposta == "S")
     {
-        int numero = LerNumero("Digite um número para ver a tabuada: ");
-        ExibirTabuada(numero);
-        string continuar = LerContinuacao();
-        if (continuar != "s" && continuar != "S")
-        {
-            break;
-        }
+        return true;
     }
-
+    else
+    {
+        return false;
+    }
 }
 
 ExecutarSistema();
