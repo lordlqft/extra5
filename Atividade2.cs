@@ -5,7 +5,6 @@ estudar tabuada. O sistema deve permitir que o usuário escolha um número e exi
 a tabuada de 1 até 10.
 */
 
-/*
 static int LerNumero(string mensagem)
 {
     Console.Write(mensagem);
@@ -50,5 +49,20 @@ static bool DesejaContinuar(string resposta)
     }
 }
 
-ExecutarSistema();
-*/
+static void ExecutarTabuada()
+{
+    Console.Clear();
+    int numero = LerNumero("Digite um número para ver a tabuada: ");
+    ExibirTabuada(numero);
+    string resposta = LerContinuacao();
+    if (DesejaContinuar(resposta))
+    {
+        ExecutarTabuada();
+    }
+    else
+    {
+        Console.WriteLine("Fim de programa");
+    }
+}
+
+ExecutarTabuada();
