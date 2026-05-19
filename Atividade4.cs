@@ -38,4 +38,6 @@ static void ExibirResultado()
     Console.WriteLine($"Desconto aplicado: {valorCompra - valorFinal:F2}");
     Console.WriteLine($"Valor final da compra: {valorFinal:F2}");
 }
+
+ExibirResultado();
 */
