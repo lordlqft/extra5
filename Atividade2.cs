@@ -31,12 +31,24 @@ static void ExibirTabuada(int numero)
     Console.Clear();
 }
 
+static string LerContinuacao()
+{
+    Console.Write("Deseja ver outra tabuada? (s/n): ");
+    string continuar = Console.ReadLine()!;
+    return continuar;
+}
+
 static void ExecutarSistema()
 {
     while (true)
     {
         int numero = LerNumero("Digite um número para ver a tabuada: ");
         ExibirTabuada(numero);
+        string continuar = LerContinuacao();
+        if (continuar != "s" && continuar != "S")
+        {
+            break;
+        }
     }
 
 }
