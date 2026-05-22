@@ -64,8 +64,5 @@ static void ExecutarConversor()
     }
 }
 
-static void Main(string[] args)
-{
-    ExecutarConversor();
-}
+ExecutarConversor();
 */
