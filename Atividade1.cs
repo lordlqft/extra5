@@ -65,4 +65,6 @@ static void ExecutarSistema()
 
     ExibirResultado(nome, media, situacao);
 }
+
+ExecutarSistema();
 */
